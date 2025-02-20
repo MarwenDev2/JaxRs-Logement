@@ -1,0 +1,7 @@
+resources\LogementResource.class
+entities\Logement.class
+utilities\Activator.class
+resources\RendezVousResource.class
+metiers\RendezVousBusiness.class
+metiers\LogementBusiness.class
+entities\RendezVous.class

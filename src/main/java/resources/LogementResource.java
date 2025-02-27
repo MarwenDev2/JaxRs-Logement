@@ -1,6 +1,7 @@
 package resources;
 
 import entities.Logement;
+import filtres.Secured;
 import metiers.LogementBusiness;
 
 import javax.ws.rs.*;
@@ -12,6 +13,7 @@ import java.util.List;
 public class LogementResource {
     private static LogementBusiness logementBusiness = new LogementBusiness();
 
+    @Secured
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getLogements(@QueryParam("reference") Integer reference,
